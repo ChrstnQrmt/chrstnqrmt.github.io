@@ -1,0 +1,434 @@
+body, h1, h2, h3, h4, h5, p, ul, li {
+  margin: 0;
+  padding: 0%;
+}
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+/* Create two equal columns that floats next to each other */
+
+.container{
+  padding: 10px 10%;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    padding-bottom: 0%; 
+  }
+  .column1 {
+    float: left;
+    display: block;
+    padding: 10px;
+    padding-bottom: 0%;
+  }
+  .pogi{
+    width: 100%;
+    height: auto;
+  }
+
+  .planguages{
+    width: 50px;
+    max-width: 100%;
+    height: auto;
+  }
+  .soc{
+    width: 50px;
+    max-width: 100%;
+    height: auto;
+  }
+  .proj{
+    width:100%;;
+    max-width: 490px;
+    height: auto;
+    border: none;
+    border-radius: 8px;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  h1{
+    font-weight: bold;
+    font-size: 40px;
+    color: #d9d9d9;
+  }
+  h2{
+     color: #d9d9d9;
+  }
+  h3{
+    color: #d9d9d9;
+  }
+  h4{
+    color: #d9d9d9;
+  }
+  h5{
+    color: #d9d9d9;
+  }
+  p{
+    color: #d9d9d9;
+    font-family: montserrat;
+    font-size: 14px;
+  }
+  /* Header styles */
+
+  header {
+    background-color: #2E3047;
+    height: 50px;
+    color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 40px;
+    margin-right: auto;
+    font-family: montserrat;
+    padding-left: 0 100px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    font-family: montserrat ;
+    padding-right: 0 100px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  nav ul li:hover {
+    color: #2E3047;
+    background-color: #d9d9d9;
+
+    border-radius: 3px;
+  }
+  
+  /* Main content styles */
+  main {
+    padding: 20px;
+    font-family: montserrat ;
+    background-image: linear-gradient(#444444, #555555, gray);
+    padding-bottom: 0px;
+  }
+  
+  /* sections */
+  .home {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 30px;
+  }
+  .about {
+    font-family: montserrat;
+    background-color: #444444;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /*hover image*/
+  .img-hover-zoom {
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+  
+  /* [2] Transition property for smooth transformation of images */
+  .img-hover-zoom img {
+    transition: transform .5s ease;
+  }
+  
+  /* [3] Finally, transforming the image when container gets hovered */
+  .img-hover-zoom:hover img {
+    transform: scale(1.5);
+
+    
+  }
+  @keyframes bounce {
+    0%, 100%, 20%, 50%, 80% {
+      -webkit-transform: translateY(0);
+      -ms-transform:     translateY(0);
+      transform:         translateY(0)
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+      -ms-transform:     translateY(-30px);
+      transform:         translateY(-30px)
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+      -ms-transform:     translateY(-15px);
+      transform:         translateY(-15px)
+    }
+  }
+  .planguages {  
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+  }
+  .planguages:hover {
+    cursor: pointer;
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+  }
+
+  .projects {
+    
+    font-family: montserrat;
+    background-color: #555555;
+    text-align: center;
+    padding: 20px
+  }
+  .education {
+    
+    font-family: montserrat;
+    background-color: #666666;
+    text-align: center;
+    padding: 20px
+  }
+  .contact {
+    
+    font-family: montserrat;
+    background-color: #777777;
+    text-align: center;
+    padding: 20px
+  }
+  
+  
+  /* Footer styles */
+  footer {
+    background-color: #2E3047;
+    color: #d9d9d9;
+    text-align: center;
+    padding: 5px;
+  }
+
+  /*button*/
+  .button {
+    background: transparent;
+    border: none;
+    color: #2E3047;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 200px;
+    font-weight: bold;
+    border: 2px solid #2E3047;
+  }
+  .btn {
+    background-color:#2E3047  ;
+    border: none;
+    color: #d9d9d9;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 50px;
+    cursor: pointer;
+    width: 200px;
+    font-weight: bold;
+
+    float: left;
+    border: 2px solid #2E3047;
+  }
+  .btn:hover {
+    background: transparent;
+    color: #2E3047
+  }
+  .button:hover {
+    background-color: #2E3047;
+    color: #d9d9d9
+  }
+
+  
+  
+  .button3 {border-radius: 8px;}
+
+  #menu-toggle {
+    display: none;
+  }
+  
+  /* Responsive nav bar */
+
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+    .logo {
+      font-size: 20px;
+      padding-left: 10px;
+    }
+
+/* Add styling for the hamburger icon */
+.menu-icon {
+  display: block;
+  font-size: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Add styling for the close icon when the dropdown is shown */
+.menu-icon.close {
+  display: none;
+}
+
+/* Show the menu when the checkbox is checked */
+#menu-toggle:checked ~ nav ul{
+  display: flex;
+  flex-direction:column-reverse;
+  align-items: center;
+}
+
+/* Hide the menu when the checkbox is not checked */
+#menu-toggle:not(:checked) ~ nav ul {
+  display: none;
+}
+
+/* Add styles for the navigation links */
+nav ul {
+  list-style-type: none;
+  font-family: montserrat;
+  padding: 0;
+  margin: 0;
+  width: 100px;
+  height: 70vh;
+  background: #2E3047;
+  border-radius: 8px;
+  border : 2px solid #d9d9d9;
+  top: 80px;
+  left: -100%;
+  text-align: center;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #2E3047;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+}
+  /* Additional styles for larger screens */
+  @media screen and (min-width: 769px) {
+    .logo {
+      font-size: 24px;
+      padding-left: 50px;
+    }
+  
+    nav ul {
+      display: block;
+    }
+  
+    nav ul li {
+      margin: 0 10px;
+    }
+  
+    nav ul li a {
+      padding: 10px;
+    } 
+  
+    /* Hide the hamburger icon for larger screens */
+    .menu-icon {
+      display: none;
+    }
+  }   
+  /*vertical line*/
+  .vertical-line {
+    position: relative;
+    width: 4px;
+    height: 200px;
+    background-color: #2E3047;
+    border-radius: 2px; /* Adjust this value to control the roundness of the edges */
+  }
+  
+  .vertical-line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 60px; /* Adjust this value to control the size of the rounded edges */
+    background-color: #d9d9d9;
+    border-radius: 8px;
+  }
+  
+  .vertical-line::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 4px;
+    height: 60px; /* Adjust this value to control the size of the rounded edges */
+    background-color: #d9d9d9;
+    border-radius: 8px;
+  }
+
+  #contacts{
+    padding: 30px 0;
+  }
+  .socmed{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  .socmed div{
+    background: #2E3047;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    border-radius: 20px;
+  }
+  .socmed div h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .socmed div a{
+    text-decoration: none;
+    color:#d9d9d9;
+    font-size: 12px;
+    margin-top: 10px;
+    display: inline-block;
+  }
