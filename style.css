@@ -14,8 +14,11 @@ body, h1, h2, h3, h4, h5, p, ul, li {
     overflow: clip;
 }
 /* Create two equal columns that floats next to each other */
-
+  
 .container{
+  padding: 10px 10%;
+}
+.container1{
   padding: 10px 10%;
 }
 .column {
@@ -42,7 +45,7 @@ body, h1, h2, h3, h4, h5, p, ul, li {
     height: auto;
   }
   .soc{
-    width: 50px;
+    width: 23px;
     max-width: 100%;
     height: auto;
   }
@@ -86,7 +89,7 @@ body, h1, h2, h3, h4, h5, p, ul, li {
 
   header {
     background-color: #2E3047;
-    height: 50px;
+    height: 60px;
     color: #d9d9d9;
     display: flex;
     align-items: center;
@@ -99,7 +102,7 @@ body, h1, h2, h3, h4, h5, p, ul, li {
   }
   
   .logo {
-    font-size: 40px;
+    font-size: 50px;
     margin-right: auto;
     font-family: montserrat;
     padding-left: 0 100px;
@@ -120,6 +123,7 @@ body, h1, h2, h3, h4, h5, p, ul, li {
   nav ul li a {
     color: inherit;
     text-decoration: none;
+    font-size: 15px ;
   }
 
   nav ul li:hover {
@@ -149,6 +153,13 @@ body, h1, h2, h3, h4, h5, p, ul, li {
     text-align: center;
     padding: 20px;
   }
+  .contacts{
+    font-family: montserrat;
+    background-color: #777777;
+    text-align: center;
+    padding: 20px
+  }
+
 
   /*hover image*/
   .img-hover-zoom {
@@ -213,14 +224,7 @@ body, h1, h2, h3, h4, h5, p, ul, li {
     text-align: center;
     padding: 20px
   }
-  .contact {
-    
-    font-family: montserrat;
-    background-color: #777777;
-    text-align: center;
-    padding: 20px
-  }
-  
+
   
   /* Footer styles */
   footer {
@@ -287,7 +291,7 @@ body, h1, h2, h3, h4, h5, p, ul, li {
     width: 100%;
   }
     .logo {
-      font-size: 20px;
+      font-size: 30px;
       padding-left: 10px;
     }
 
@@ -352,7 +356,7 @@ nav ul li a:hover {
   /* Additional styles for larger screens */
   @media screen and (min-width: 769px) {
     .logo {
-      font-size: 24px;
+      font-size: 30px;
       padding-left: 50px;
     }
   
@@ -404,31 +408,97 @@ nav ul li a:hover {
     border-radius: 8px;
   }
 
-  #contacts{
-    padding: 30px 0;
+
+  .ico{
+    width: 23px;
+    max-width: 100%;
+    max-height:100%;
+    height: auto;
+    padding-top: 10px;
   }
-  .socmed{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+  .image-with-text {
+    width: 100%;
+    max-width: 500px; /* Adjust this as needed */
   }
-  .socmed div{
-    background: #2E3047;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-right: 10px;
-    border-radius: 20px;
+  
+  .image-with-text img {
+    float: left;
+    margin-right: 10px; /* Add some spacing between the image and text */
   }
-  .socmed div h2{
-    font-size: 30px;
-    margin-bottom: 15px;
+
+  .row .column .image-with-text{
+    max-width: 100%;
+    padding-left: 80px;
   }
-  .socmed div a{
-    text-decoration: none;
-    color:#d9d9d9;
-    font-size: 12px;
+
+  .contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .txt{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 11px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  .contacts .row .column h3 {
+    text-align: left;
+    text-align: justify; 
+    margin: 0;
+    padding: 0%;
+    padding-right: 10%; 
+    padding-left: 10%;
+  }
+  .contacts .row .column p {
+    text-align: left;
+    text-align: justify; 
+    padding-right: 10%; 
+    padding-left: 10%;
+    margin-bottom: 10%;
+  }
+
+  .contact-container h2 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input,
+  textarea {
+    padding: 20px;
+    font-family: montserrat;
+    margin-bottom: 10px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    background: transparent;
+  }
+  ::placeholder {
+    color: #d9d9d9;
+    opacity: 1; /* Firefox */
+  }
+
+  .sub {
+    font-family: montserrat;
+    background-color: #2E3047;
+    color: #d9d9d9;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .response {
+    text-align: center;
     margin-top: 10px;
-    display: inline-block;
+    color: #007BFF;
+    font-weight: bold;
   }

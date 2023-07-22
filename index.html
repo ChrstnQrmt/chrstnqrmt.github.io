@@ -9,7 +9,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
   <link rel="icon" type="image/x-icon" href="assets/iconlogo.png">
-
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -159,36 +158,51 @@
     </div>
     <br><br>
   </section>  
-  <section class="contact" id="contact">
-    <br><br><br><br>
-    <div id="contacts">
-      <div class="container">
-        <h2 data-aos="fade-up">Contact Informations</h2>  
-        <div class="socmed">
-          <div data-aos="fade-up">
-            <h2>Facebook</h2>
-            <p>This is my main facebook profile that I'm using, you can message me here for more information.</p>
-            <a href="https://www.facebook.com/chrstnqrmt" target="_blank"><img  src="assets/fb.png" class="soc" alt="hatdog"></a>
-          </div>
-          <div data-aos="fade-up">
-            <h2>Instagram</h2>
-            <p>This is my main instagram profile that I'm using, you can message me here for more information.</p>
-            <a href="https://www.instagram.com/chrstnqrmt" target="_blank"><img  src="assets/ig.png" class="soc" alt="hatdog"></a>
-          </div>
-          <div data-aos="fade-up">
-            <h2>Twitter</h2>
-            <p>This is my main twitter profile that I'm using, you can message me here for more information.</p>
-            <a href="https://twitter.com/chrstnqrmt" target="_blank"><img  src="assets/tw.png" class="soc" alt="hatdog"></a>
-          </div>
-
-        </div>
-
+  <section class="contacts" id="contact">
+    <br><br><br>
+    <h2 data-aos="fade-up">Contact Us</h2>
+    <br><br>
+    <div class="row">
+      <div class="column"> 
+        <br><br><br>
+      <div class="image-with-text" data-aos="fade-up">
+      <img src="assets/env.png" class="ico" alt="oki">
+      <h3>Email</h3>
+      <p>christiannoequirimit@gmail.com</p>
       </div>
+
+      <div class="image-with-text" data-aos="fade-up">
+      <img src="assets/phone.png" class="ico" alt="oki">
+        <h3>Phone Number</h3>
+          <p>0927-496-5007</p>
+      </div>
+
+      <div class="image-with-text" data-aos="fade-up">
+       <img src="assets/loc.png" class="ico" alt="oki">
+        <h3>Location</h3>
+          <p>Mangaldan, Pangasinan, Philippines</p>
+      </div>
+
     </div>
-    <br><br><br><br>
-  </div>
+    <div class="column">
+      <div class="contact-container" data-aos="fade-up">
+        <form id="contact-form" action="https://formsubmit.co/christiannoequirimit@gmail.com" method="POST">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+          <button class="sub" type="submit">Send Message</button>
+        </form>
+        <div class="response" id="response"></div>
+      </div>
+      </div>
+</div>
+  <br><br><br><br><br>
+    </section>
   <footer>
-    <p>&copy; Christian Noe Quirimit Portfolio. All rights reserved.</p>
+        <a href="https://www.facebook.com/chrstnqrmt" target="_blank"><img src="assets/fb.png" class="soc"></a>
+        <a href="https://www.instagram.com/chrstnqrmt/" target="_blank"><img src="assets/ig.png" class="soc"></a>
+        <a href="https://twitter.com/chrstnqrmt" target="_blank"><img src="assets/tw.png" class="soc"></a>
+    <p style="font-size: 10px;">&copy; Christian Noe Quirimit Portfolio. All rights reserved.</p>
   </footer>
   <script>
     AOS.init({
