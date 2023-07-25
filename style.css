@@ -25,7 +25,7 @@ body, h1, h2, h3, h4, h5, p, ul, li {
     float: left;
     width: 50%;
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+    height: 300px;
     padding-bottom: 0%; 
   }
   .column1 {
@@ -503,3 +503,191 @@ nav ul li a:hover {
     color: #007BFF;
     font-weight: bold;
   }
+
+
+  
+
+#education-experience {
+  background-color: #666666;
+  padding: 50px 0;
+  font-family: montserrat;
+}
+
+#education-experience .container .wrapper .topper-title {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #d9d9d9;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900
+}
+
+#education-experience .container .wrapper .timeline {
+  display: flex;
+  justify-content: center
+}
+
+
+.timeline {
+  overflow: hidden
+}
+
+.timeline .timeline-content {
+  display: flex;
+  height: 100%;
+  justify-content: flex-start
+}
+
+.timeline .timeline-content .line {
+  background-color: #d9d9d9;
+  width: 10px;
+  border-radius: 10px
+}
+
+.timeline .timeline-content .details .detail-block {
+  margin: 30px 0
+}
+
+.timeline .timeline-content .details .detail-block .context,.timeline .timeline-content .details .detail-block .title {
+  margin-left: 30px;
+}
+
+.timeline .timeline-content .details .detail-block .title {
+  padding: 20px 30px
+}
+
+.timeline .timeline-content .details .detail-block .context {
+  padding: 10px 0;
+  color: #f8f8f8
+}
+
+.timeline .timeline-content .details .detail-block .context a {
+  color: #f8f8f8
+}
+
+.timeline .timeline-content .details .detail-block .context ul li {
+  list-style-position: inside
+}
+
+.timeline .timeline-content .details .detail-block .title {
+  background-color: #2E3047;
+  color: #000;
+  border-radius: 10px;
+}
+
+.timeline .timeline-content .details .topper {
+  display: flex;
+  margin: 50px 0 50px -15px
+}
+
+.timeline .timeline-content .details .topper .year {
+  color: #f8f8f8
+}
+
+.timeline .timeline-content .details .topper .dot {
+  width: 23px;
+  height: 23px;
+  background-color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px
+}
+
+/*  SKILLS */
+
+.skills{
+  margin-top: 150px;
+  margin-left: 120px;
+  min-height: auto;
+  padding-bottom: 7rem;
+  
+}
+.skills .heading{
+   margin-bottom: 20px;
+}
+.skills .skills-row{
+   margin-bottom: .2px;
+   display: flex;
+   flex-wrap: wrap;
+   
+}
+
+.skills-box{
+   margin-bottom: -100px;
+   margin-left: 260px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+   
+.skills-box .skills-content{
+   position: relative;
+   text-align: center;
+   position: relative;
+   border: .3rem solid lightgray;
+   border-radius: .6rem;
+   width: 700px;
+   height: 595px;
+   padding: 0 50px;
+   z-index: 1;
+   overflow: hidden;
+}
+.skills-box .skills-content::before{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0%;
+   height: 100%;
+   background: rgba(255, 255, 255, 0.485);
+   z-index: -1;
+   transition: .5s;
+}
+.skills-box .skills-content:hover::before{
+   width: 100%;
+
+}
+
+.skills-content .progress{
+   padding:  5px;
+   
+}
+
+.skills-content .progress h3{
+   font-size: 20px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.skills-content .progress .bar{
+   height: 10px;
+   border-radius: .6rem;
+   border: .2rem solid lightgray;
+   padding: 2px;
+   margin-bottom: 3px;
+}
+.skills-content .progress .bar span{
+   display: block;
+   height: 100%;
+   border-radius: .3rem;
+   background: lightgray;
+}
+
+
+
+.skills-coloumn:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
+   width: 60%;
+}
+.skills-coloumn:nth-child(1) .skills-content .progress:nth-child(2) .bar span{
+   width: 80%;
+}.skills-coloumn:nth-child(1) .skills-content .progress:nth-child(3) .bar span{
+   width: 70%;
+}.skills-coloumn:nth-child(1) .skills-content .progress:nth-child(4) .bar span{
+   width: 75%;
+}.skills-coloumn:nth-child(1) .skills-content .progress:nth-child(5) .bar span{
+   width: 75%;
+}.skills-coloumn:nth-child(1) .skills-content .progress:nth-child(6) .bar span{
+   width: 60%;
+}
